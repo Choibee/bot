@@ -1,9 +1,10 @@
 {
-    "name": "botordiscord",
+    "name": "botfordiscord",
     "version": "0.0.1",
     "description": "first time messing with an api and here are the results",
     "readme": "READ.md",
     "author": "Choi",
+    "main": "gala.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/Choibee/bot"
@@ -17,7 +18,7 @@
         "discordapp"
     ],
     "license": "MIT",
-    "main": "gala.js",
+    
     "dependencies": {
         "discord.js": "12.3.1"
     }
