@@ -14,12 +14,14 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/); //makes array of arguements
     const command = args.shift().toLowerCase();//the specified command without a prefix
 
-    if (command === 'args-info') {
+    /*if (command === 'args-info') {
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
         message.channel.send(`Command name: ${args[0]}\nArguments: ${args[1]}`)
-    }else if (command === 'reporttoggle'){
+    }else*/ if (command === 'reporttoggle'){
+        //let cash = message.member.roles.find("name", "new");
+    if (message.member.roles(771579521551695872n)){
         if (portre === true){
             portre = false;
             return message.channel.send('The report command is now disabled')
@@ -28,7 +30,7 @@ client.on('message', message => {
             return message.channel.send('The report command is now enabled')
         }
     }
-     else if(portre === true){
+    } else if (portre === true){
         if (command === 'report') {
             if (!message.mentions.users.size){
                 return message.reply('you need to tag a user bruv')
